@@ -1,0 +1,22 @@
+.App{
+  min-height:100vh;
+  max-width:1200px;
+  margin:auto;
+  padding:10px 10px;
+}
+
+header{
+  min-height:70px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:15px;
+  margin-bottom:70px;
+  background-color:#FFFFFF;
+  border-radius:5px;
+  box-shadow:var(--box-shadow);
+}
+
+.header .logo{
+  
+}

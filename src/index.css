@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+
+:root {
+  --box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px 10px;
+}
+
+.light {
+  background-color: #ffffff;
+  transition: all 500ms;
+}
+
+.medium {
+  background-color: #efefef;
+  transition: all 500ms;
+}
+
+.dark {
+  background-color: #15202b;
+  transition: all 500ms;
+}
+
+.grad1 {
+  background: linear-gradient(
+    90deg,
+    hsla(191, 75%, 60%, 1) 0%,
+    hsla(248, 87%, 36%, 1) 100%
+  );
+}
+.grad2 {
+  background: linear-gradient(235deg, #ffffff 0%, #000f25 100%),
+    linear-gradient(180deg, #6100ff 0%, #000000 100%),
+    linear-gradient(
+      235deg,
+      #ffa3ac 0%,
+      #ffa3ac 40%,
+      #00043c calc(40% + 1px),
+      #00043c 60%,
+      #005d6c calc(60% + 1px),
+      #005d6c 70%,
+      #00c9b1 calc(70% + 1px),
+      #00c9b1 100%
+    ),
+    linear-gradient(
+      125deg,
+      #ffa3ac 0%,
+      #ffa3ac 40%,
+      #00043c calc(40% + 1px),
+      #00043c 60%,
+      #005d6c calc(60% + 1px),
+      #005d6c 70%,
+      #00c9b1 calc(70% + 1px),
+      #00c9b1 100%
+    );
+  background-blend-mode: soft-light, screen, darken, normal;
+}
+
+.grad3 {
+  background: linear-gradient(125deg, #ffffff 0%, #000000 100%),
+    linear-gradient(
+      200deg,
+      #ffd9e8 0%,
+      #ffd9e8 50%,
+      #de95ba calc(50% + 1px),
+      #de95ba 60%,
+      #7f4a88 calc(60% + 1px),
+      #7f4a88 75%,
+      #4a266a calc(75% + 1px),
+      #4a266a 100%
+    ),
+    linear-gradient(
+      113deg,
+      #ffd9e8 0%,
+      #ffd9e8 40%,
+      #de95ba calc(40% + 1px),
+      #de95ba 50%,
+      #7f4a88 calc(50% + 1px),
+      #7f4a88 70%,
+      #4a266a calc(70% + 1px),
+      #4a266a 100%
+    );
+  background-blend-mode: overlay, overlay, normal;
+}
+
+.grad4 {
+  background-image: linear-gradient(
+      30deg,
+      rgba(38, 224, 218, 0.97) 12%,
+      transparent 12.5%,
+      transparent 87%,
+      rgba(38, 224, 218, 0.97) 87.5%,
+      rgba(38, 224, 218, 0.97)
+    ),
+    linear-gradient(
+      150deg,
+      rgba(38, 224, 218, 0.97) 12%,
+      transparent 12.5%,
+      transparent 87%,
+      rgba(38, 224, 218, 0.97) 87.5%,
+      rgba(38, 224, 218, 0.97)
+    ),
+    linear-gradient(
+      30deg,
+      rgba(38, 224, 218, 0.97) 12%,
+      transparent 12.5%,
+      transparent 87%,
+      rgba(38, 224, 218, 0.97) 87.5%,
+      rgba(38, 224, 218, 0.97)
+    ),
+    linear-gradient(
+      150deg,
+      rgba(38, 224, 218, 0.97) 12%,
+      transparent 12.5%,
+      transparent 87%,
+      rgba(38, 224, 218, 0.97) 87.5%,
+      rgba(38, 224, 218, 0.97)
+    ),
+    linear-gradient(
+      60deg,
+      rgba(38, 224, 218, 0.5) 25%,
+      transparent 25.5%,
+      transparent 75%,
+      rgba(38, 224, 218, 0.5) 75%,
+      rgba(38, 224, 218, 0.5)
+    ),
+    linear-gradient(
+      60deg,
+      rgba(38, 224, 218, 0.5) 25%,
+      transparent 25.5%,
+      transparent 75%,
+      rgba(38, 224, 218, 0.5) 75%,
+      rgba(38, 224, 218, 0.5)
+    );
+  background-size: 46px 80.5px;
+  background-position: 0 0, 0 0, 23px 40.25px, 23px 40.25px, 0 0, 23px 40.25px;
+  background-color: rgba(107, 93, 107, 0.91);
+}
+.grad5{
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='46.19' height='40' viewBox='0 0 34.64101615137755 30' patternUnits='userSpaceOnUse' patternTransform='rotate(135)'%3E%3Crect width='100%25' height='100%25' fill='rgba(42, 67, 101,1)'/%3E%3Cpath d='M-20-20h200v200h-200M33.77 25.5L25.98 21L18.19 25.5L18.19 34.5L25.98 39L33.77 34.5zM16.45 25.5L8.66 21L0.87 25.5L0.87 34.5L8.66 39L16.45 34.5zM7.79 10.5L0 6L-7.79 10.5L-7.79 19.5L0 24L7.79 19.5zM16.45-4.5L8.66-9L0.87-4.5L0.87 4.5L8.66 9L16.45 4.5zM33.77-4.5L25.98-9L18.19-4.5L18.19 4.5L25.98 9L33.77 4.5zM42.43 10.5L34.64 6L26.85 10.5L26.85 19.5L34.64 24L42.43 19.5zM25.11 10.5L17.32 6L9.53 10.5L9.53 19.5L17.32 24L25.11 19.5z' fill='rgba(26, 32, 44,1)'/%3E%3Cpath d='M-20-20h200v200h-200M24.21 25.25L15.98 20.5L7.75 25.25L7.75 34.75L15.98 39.5L24.21 34.75zM6.89 25.25L-1.34 20.5L-9.57 25.25L-9.57 34.75L-1.34 39.5L6.89 34.75zM-1.77 10.25L-10 5.5L-18.23 10.25L-18.23 19.75L-10 24.5L-1.77 19.75zM6.89-4.75L-1.34-9.5L-9.57-4.75L-9.57 4.75L-1.34 9.5L6.89 4.75zM24.21-4.75L15.98-9.5L7.75-4.75L7.75 4.75L15.98 9.5L24.21 4.75zM32.87 10.25L24.64 5.5L16.41 10.25L16.41 19.75L24.64 24.5L32.87 19.75zM41.53 25.25L33.3 20.5L25.07 25.25L25.07 34.75L33.3 39.5L41.53 34.75zM15.55 40.25L7.32 35.5L-0.91 40.25L-0.91 49.75L7.32 54.5L15.55 49.75zM-10.43 25.25L-18.66 20.5L-26.89 25.25L-26.89 34.75L-18.66 39.5L-10.43 34.75zM-10.43-4.75L-18.66-9.5L-26.89-4.75L-26.89 4.75L-18.66 9.5L-10.43 4.75zM15.55-19.75L7.32-24.5L-0.91-19.75L-0.91-10.25L7.32-5.5L15.55-10.25zM41.53-4.75L33.3-9.5L25.07-4.75L25.07 4.75L33.3 9.5L41.53 4.75zM32.87 40.25L24.64 35.5L16.41 40.25L16.41 49.75L24.64 54.5L32.87 49.75zM-1.77 40.25L-10 35.5L-18.23 40.25L-18.23 49.75L-10 54.5L-1.77 49.75zM-19.09 10.25L-27.32 5.5L-35.55 10.25L-35.55 19.75L-27.32 24.5L-19.09 19.75zM-1.77-19.75L-10-24.5L-18.23-19.75L-18.23-10.25L-10-5.5L-1.77-10.25zM32.87-19.75L24.64-24.5L16.41-19.75L16.41-10.25L24.64-5.5L32.87-10.25zM50.19 10.25L41.96 5.5L33.73 10.25L33.73 19.75L41.96 24.5L50.19 19.75zM15.55 10.25L7.32 5.5L-0.91 10.25L-0.91 19.75L7.32 24.5L15.55 19.75z' fill='rgba(236, 201, 75,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ")
+}
+.grad6 {
+  background: repeating-linear-gradient(
+      45deg,
+      #0000 calc(-650% / 13) calc(50% / 13),
+      #cd29a9 0 calc(100% / 13),
+      #0000 0 calc(150% / 13),
+      #cd29a9 0 calc(200% / 13),
+      #0000 0 calc(250% / 13),
+      #cd29a9 0 calc(300% / 13)
+    ),
+    repeating-linear-gradient(
+        45deg,
+        #0000 calc(-650% / 13) calc(50% / 13),
+        #cd29a9 0 calc(100% / 13),
+        #0000 0 calc(150% / 13),
+        #cd29a9 0 calc(200% / 13),
+        #0000 0 calc(250% / 13),
+        #cd29a9 0 calc(300% / 13)
+      )
+      23px 23px,
+    repeating-linear-gradient(
+      -45deg,
+      #0000 calc(-650% / 13) calc(50% / 13),
+      #cd29a9 0 calc(100% / 13),
+      #0000 0 calc(150% / 13),
+      #cd29a9 0 calc(200% / 13),
+      #0000 0 calc(250% / 13),
+      #cd29a9 0 calc(300% / 13)
+    ),
+    repeating-linear-gradient(
+        -45deg,
+        #0000 calc(-650% / 13) calc(50% / 13),
+        #cd29a9 0 calc(100% / 13),
+        #0000 0 calc(150% / 13),
+        #cd29a9 0 calc(200% / 13),
+        #0000 0 calc(250% / 13),
+        #cd29a9 0 calc(300% / 13)
+      )
+      23px 23px #325e1f;
+  background-size: 46px 46px;
+}
+
+.edit {
+  font-size: 18px;
+  color: #1363df;
+  cursor: pointer;
+}
+
+.delete {
+  font-size: 18px;
+  color: #d82148;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  .showTask li {
+    width: 100%;
+  }
+}
